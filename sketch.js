@@ -31,19 +31,19 @@ function draw() {
   if(position !== undefined){
     if(keyDown(LEFT_ARROW)){
       balloon.addAnimation("hotAirBalloon",balloonImage2);
-      writePosition(-1,0);
+      writePosition(-10,0);
     }
     else if(keyDown(RIGHT_ARROW)){
       balloon.addAnimation("hotAirBalloon",balloonImage2);
-      writePosition(1,0);
+      writePosition(10,0);
     }
     else if(keyDown(UP_ARROW)){
       balloon.addAnimation("hotAirBalloon",balloonImage2);
-      writePosition(0,-1);
+      writePosition(0,-10);
     }
     else if(keyDown(DOWN_ARROW)){
       balloon.addAnimation("hotAirBalloon",balloonImage2);
-      writePosition(0,+1);
+      writePosition(0,+10);
     }
 
     drawSprites();
